@@ -1,11 +1,11 @@
 'use client'
 
 import Particles from "@/components/ui/particles";
-import {useState} from "react";
-import {FaBaseball} from "react-icons/fa6"
+import { useState } from "react";
+import { FaBaseball } from "react-icons/fa6"
 
 export const Services = () => {
-  const [color, setColor] = useState("#ffffff");
+  const [color] = useState("#ffffff");
   const servicesAvailable = [
     {
       name: "Advanced Htting Training",
@@ -51,11 +51,11 @@ export const Services = () => {
               aria-hidden="true"
             />
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black"/>
+            <div className="absolute inset-0 bg-black" />
             {/* Content */}
             <div className="relative h-full p-6 flex flex-col justify-center">
               <div className="flex items-center gap-2 text-white scroll-m-20 text-xl font-semibold tracking-tight">
-                <FaBaseball/>
+                <FaBaseball />
                 <p>{service.name}</p>
               </div>
               <p className="text-white leading-7 [&:not(:first-child)]:mt-3">
@@ -73,7 +73,7 @@ export const Services = () => {
         ))}
         {servicesAvailable.length < 6 && (
           <div className="relative overflow-hidden rounded-lg border-8 border-orange-500">
-            <div className="absolute inset-0 bg-black"/>
+            <div className="absolute inset-0 bg-black" />
             <div className="relative h-full p-6 flex flex-col justify-center">
               <h4 className="text-white scroll-m-20 text-xl font-semibold tracking-tight">
                 More Services Coming Soon

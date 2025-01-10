@@ -56,7 +56,7 @@ export default function Home() {
               className="h-64 w-full object-cover sm:h-80 md:h-64 rounded-md"
             />
             <p className="max-w-2xl text-gray-700">
-              At <span className="font-bold text-orange-500">BMO Elite Performance</span>, we've crafted a premier
+              At <span className="font-bold text-orange-500">BMO Elite Performance</span>, we&apos;ve crafted a premier
               training environment
               where passion meets precision. Our facility combines cutting-edge technology with expert instruction to
               deliver a training
