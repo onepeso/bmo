@@ -10,27 +10,27 @@ export const Services = () => {
     {
       name: "Advanced Htting Training",
       description:
-        "Master your technique with personalized instruction from our elite coaches. Whether you're fine-tuning your swing or perfecting your pitch, our focused sessions provide instant feedback and proven strategies to elevate your game. Each lesson is tailored to your skill level and specific goals.",
+        "Our Advanced Hitting Training program is designed to elevate your batting skills to the next level. Our expert coaches focus on refining swing mechanics, enhancing hand-eye coordination, and improving overall hitting performance.",
     },
     {
       name: "Pitching and Catching Training",
       description:
-        "Master your technique with personalized instruction from our elite coaches. Whether you're fine-tuning your swing or perfecting your pitch, our focused sessions provide instant feedback and proven strategies to elevate your game. Each lesson is tailored to your skill level and specific goals.",
+        "Our Pitching and Catching Training program is designed to develop the essential skills needed for success on the mound and behind the plate. For  catchers, we focus on developing quick reflexes, effective framing techniques, and strong communication skills with pitchers. ",
     },
     {
       name: "Strength Training",
       description:
-        "Master your technique with personalized instruction from our elite coaches. Whether you're fine-tuning your swing or perfecting your pitch, our focused sessions provide instant feedback and proven strategies to elevate your game. Each lesson is tailored to your skill level and specific goals.",
+        "Our Strength Training program is designed to enhance athletic performance through targeted strength and conditioning exercises. Our certified trainers create personalized workout plans that focus on building muscle, increasing power, and improving overall fitness.",
     },
     {
       name: "Agility Training",
       description:
-        "Master your technique with personalized instruction from our elite coaches. Whether you're fine-tuning your swing or perfecting your pitch, our focused sessions provide instant feedback and proven strategies to elevate your game. Each lesson is tailored to your skill level and specific goals.",
+        "Our Agility Training program is designed to enhance your speed, coordination, and overall athletic performance. Through a series of dynamic drills and exercises, our experienced coaches focus on improving your quickness, balance, and reaction time.",
     },
     {
       name: "Conditioning Programs",
       description:
-        "Master your technique with personalized instruction from our elite coaches. Whether you're fine-tuning your swing or perfecting your pitch, our focused sessions provide instant feedback and proven strategies to elevate your game. Each lesson is tailored to your skill level and specific goals.",
+        "Our Conditioning Programs are designed to enhance endurance, stamina, and overall athletic performance. Our expert trainers create customized conditioning plans that focus on building cardiovascular fitness, strength, and agility through a variety of high-intensity workouts and drills.",
     },
   ];
 

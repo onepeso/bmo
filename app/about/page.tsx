@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 
 export default function About() {
   return (
@@ -20,9 +21,8 @@ export default function About() {
       <section className=" flex flex-col gap-10 p-10 md:px-0 md:py-10">
         <div className=" flex flex-col gap-2">
           <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"> Our Facility </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-3"><span className=" text-orange-500 font-bold">We are open 6 days a week </span> please
-            visit our online
-            scheduler for availability</p>
+          <p className="leading-7 [&:not(:first-child)]:mt-3"><span className=" text-orange-500 font-bold">We are open 6 days a week </span>
+            please visit our <Link href="https://bmo-elite-performance.square.site/" className="font-bold underline"> online scheduler </Link> for availability           </p>
         </div>
         <div className=" flex flex-col">
           <h4 className=" font-bold"> We Offer:</h4>
@@ -48,14 +48,14 @@ export default function About() {
       <section className="flex flex-col gap-2 p-10 md:p-5 lg:p-0 mt-16">
         <div className="flex flex-col gap-2">
           <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"> Our Team </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-3"><span className="text-orange-500 font-bold">We want you to reach your peak </span> Let
+          <p className="leading-7 [&:not(:first-child)]:mt-3"><span className="text-orange-500 font-bold">We want you to reach your peak </span> let
             us help you achieve
             this</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
           <div className="flex flex-col gap-2">
-            <Image className="md:h-1/2 object-cover object-top rounded-lg mb-3" alt="Facility Pictures"
+            <Image className="w-full h-72 object-cover object-top rounded-lg mb-3" alt="Facility Pictures"
               src="/images/miguel.webp"
               width={500}
               height={500} />
@@ -63,7 +63,7 @@ export default function About() {
             <p>Baseball, Fitness, and Nutritional Coach</p>
           </div>
           <div className="flex flex-col gap-2">
-            <Image className="md:h-1/2 object-cover object-top rounded-lg mb-3" alt="Facility Pictures"
+            <Image className="w-full h-72 object-cover object-top rounded-lg mb-3" alt="Facility Pictures"
               src="/images/francisca.webp"
               width={500}
               height={500} />

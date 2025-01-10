@@ -24,7 +24,7 @@ export default function Home() {
               Champion </TypingAnimation>
 
             <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
-              Your Home for Baseball Development: Training, Coaching, and Community.
+              Your Home for Baseball and Softball Development: Training, Coaching, and Community.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 text-center">
