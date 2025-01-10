@@ -35,7 +35,7 @@ export const Services = () => {
   ];
 
   return (
-    <section className="mx-auto max-w-screen-xl mt-16 mb-10">
+    <section className="mx-auto max-w-screen-xl mt-16 mb-10 p-3">
       <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-8 text-center">
         Explore Our Services
       </h3>

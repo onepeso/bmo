@@ -5,14 +5,16 @@ export default function About() {
     <main className=" mx-auto max-w-screen-xl">
       <section className="flex flex-col gap-3 p-10 md:px-0 md:py-10 mb-5">
         <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-5xl">About Us</h1>
-        <p className="leading-7">Welcome to BMO Elite Performance, where we develop players to become the best in class
-          while ensuring they have fun along the way. Our facility is led by former MLB player Miguel Olivo, who played
-          for over 10 years, alongside Francisca Olivo, who focuses on strength and nutrition to help youth athletes
-          stay healthy and perform their best. </p>
-        <Image className=" md:w-full md:h-72 object-cover rounded-lg object-top" alt=" About Image"
-          src={"/images/banner-bmo.webp"}
-          width={1000}
-          height={1000} />
+        <div className="flex flex-col-reverse gap-2 md:flex-col">
+          <p className="leading-7">Welcome to BMO Elite Performance, where we develop players to become the best in class
+            while ensuring they have fun along the way. Our facility is led by former MLB player Miguel Olivo, who played
+            for over 10 years, alongside Francisca Olivo, who focuses on strength and nutrition to help youth athletes
+            stay healthy and perform their best. </p>
+          <Image className="md:h-72 w-full object-cover rounded-lg object-top" alt=" About Image"
+            src={"/images/banner-bmo.webp"}
+            width={1000}
+            height={1000} />
+        </div>
       </section>
 
       <section className=" flex flex-col gap-10 p-10 md:px-0 md:py-10">
@@ -33,12 +35,12 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Image className="md:w-full md:h-72 object-cover object-top rounded-lg" alt="Facility Pictures" src="/images/bmo-3.webp" width={500} height={500} />
-          <Image className="md:w-full md:h-72 object-cover object-center rounded-lg" alt="Facility Pictures" src="/images/bmo-4.webp" width={500} height={500} />
-          <Image className="md:w-full md:h-72 object-cover object-top rounded-lg" alt="Facility Pictures" src="/images/bmo-5.webp" width={500} height={500} />
-          <Image className="md:w-full md:h-72 object-cover object-center rounded-lg" alt="Facility Pictures" src="/images/bmo-6.webp" width={500} height={500} />
-          <Image className="md:w-full md:h-72 object-cover object-top rounded-lg" alt="Facility Pictures" src="/images/bmo-2.webp" width={500} height={500} />
-          <Image className="md:w-full md:h-72 object-cover object-top rounded-lg" alt="Facility Pictures" src="/images/bmo-1.webp" width={500} height={500} />
+          <Image className="w-full h-72 object-cover object-top rounded-lg" alt="Facility Pictures" src="/images/bmo-3.webp" width={500} height={500} />
+          <Image className="w-full h-72 object-cover object-center rounded-lg" alt="Facility Pictures" src="/images/bmo-4.webp" width={500} height={500} />
+          <Image className="w-full h-72 object-cover object-top rounded-lg" alt="Facility Pictures" src="/images/bmo-5.webp" width={500} height={500} />
+          <Image className="w-full h-72 object-cover object-center rounded-lg" alt="Facility Pictures" src="/images/bmo-6.webp" width={500} height={500} />
+          <Image className="w-full h-72 object-cover object-top rounded-lg" alt="Facility Pictures" src="/images/bmo-2.webp" width={500} height={500} />
+          <Image className="w-full h-72 object-cover object-top rounded-lg" alt="Facility Pictures" src="/images/bmo-1.webp" width={500} height={500} />
           <div>
           </div>
         </div>
