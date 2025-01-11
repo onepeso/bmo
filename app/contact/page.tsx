@@ -6,7 +6,7 @@ export default function Contact() {
       <section className=" mx-auto max-w-screen-xl flex flex-col gap-5 p-10 md:px-0 md:py-10 mb-5">
         <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-5xl">Reach Out </h1>
         <div className="flex flex-col-reverse gap-5 md:flex-col">
-          <p className="leading-7">Have questions or feedback? We're just a message away!</p>
+          <p className="leading-7">Have questions or feedback? We&apos;re just a message away!</p>
         </div>
       </section>
       <div className="flex items-center justify-center bg-gray-100">
