@@ -13,15 +13,12 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-gray-900/75 from-gray-900/95 to-gray-900/25"
         ></div>
-
         <div
           className="relative mx-auto max-w-screen-xl px-4 py-32 md:flex md:items-center lg:px-0"
         >
-          <div className="max-w-2xl text-center md:text-start">
-            <h1 className="font-extrabold text-white text-5xl">Train Like A
-              Pro</h1>
-            <TypingAnimation className="text-5xl block font-extrabold text-bmo-primary"> Perform Like A
-              Champion </TypingAnimation>
+          <div className="max-w-5xl text-center md:text-start">
+            <h1 className="font-extrabold text-white text-2xl lg:text-4xl">Unlock the Power of Excellence with BMO Elite</h1>
+            <TypingAnimation className="text-2xl lg:text-4xl block font-extrabold text-bmo-primary"> Where Innovation Meets Precision </TypingAnimation>
 
             <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
               Your Home for Baseball and Softball Development: Training, Coaching, and Community.
@@ -56,12 +53,7 @@ export default function Home() {
               className="h-64 w-full object-cover sm:h-80 md:h-64 rounded-md"
             />
             <p className="max-w-2xl text-gray-700 mb-5">
-              At <span className="font-bold text-orange-500">BMO Elite Performance</span>, we&apos;ve crafted a premier
-              training environment
-              where passion meets precision. Our facility combines cutting-edge technology with expert instruction to
-              deliver a training
-              experience that sets the standard for athletic development.
-            </p>
+              Welcome to <span className="font-bold text-orange-500">BMO Elite Performance</span>: Where Passion Meets Precision. Our premier training environment, spanning 2800 sqft, combines cutting-edge technology with expert instruction to set the standard for athletic development. The space is equipped with 2 tunnels, a pitching mound, an outside cage for summertime, and exercise equipment for the Power Elite area, where we train athletes to become better, fitter competitors.            </p>
           </div>
         </div>
 

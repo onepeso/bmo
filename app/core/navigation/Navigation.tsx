@@ -14,7 +14,7 @@ export default function Navigation() {
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Services", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "Contact", link: "/contact" },
   ];
 
   const handleMenuClick = () => {
