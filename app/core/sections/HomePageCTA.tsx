@@ -60,10 +60,10 @@ export default function Home() {
         {/* Right Image */}
         <Image
           alt=""
-          src="/images/bmogroup.webp"
+          src="/images/bmo-stance.webp"
           width={500}
           height={500}
-          className="h-64 w-full object-cover md:h-[32rem] lg:h-29rem rounded-md"
+          className="h-64 w-full object-cover object-top md:h-[32rem] lg:h-29rem rounded-md"
         />
 
       </section>
