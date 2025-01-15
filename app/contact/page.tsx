@@ -9,7 +9,7 @@ export default function Contact() {
           <p className="leading-7">Have questions or feedback? We&apos;re just a message away!</p>
         </div>
       </section>
-      <div className="flex items-center justify-center bg-gray-100">
+      <div className="flex items-center justify-center bg-gray-100 p-5 lg:p-0">
         <div className="w-full max-w-xl p-8 space-y-6 my-16 bg-white rounded-lg shadow-md">
           <header className="text-center">
             <h2 className="text-2xl font-bold">Contact Us</h2>
@@ -23,7 +23,15 @@ export default function Contact() {
                 <p>+1 681-260-1421</p>
                 <p>olivobaseball2121@gmail.com</p>
                 <p>761 opequon LN, Kearneysville WV</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.617353582045!2d-77.93789527702825!3d39.39790865065451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ca01c5d4b44417%3A0x95a76b60e99dd8b0!2sBMO%20Elite%20Performance!5e0!3m2!1sen!2sus!4v1736556624929!5m2!1sen!2sus" width="500" height="450" className="border-0 my-5" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <div className="px-0">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.617353582045!2d-77.93789527702825!3d39.39790865065451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ca01c5d4b44417%3A0x95a76b60e99dd8b0!2sBMO%20Elite%20Performance!5e0!3m2!1sen!2sus!4v1736556624929!5m2!1sen!2sus"
+                    className="border-0 my-5 w-[400px] lg:w-[500px] h-[450px] md:h-[400px] lg:h-[450px] "
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
                 <Link
                   href="https://maps.app.goo.gl/ybJxcJp5BGJkvoG67"
                   target="_blank"
