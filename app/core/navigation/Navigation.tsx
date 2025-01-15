@@ -13,7 +13,7 @@ export default function Navigation() {
   const menuLinks = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
-    { name: "Services", link: "/" },
+    { name: "Services", link: "/services" },
     { name: "Contact", link: "/contact" },
   ];
 
