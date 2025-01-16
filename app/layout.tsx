@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "./core/navigation/Navigation";
+import { Footer } from "./core/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "BMO Elite Performance",
-  description: "Your Home for Baseball & Softball Development: Training, Coaching, and Community.",
+  description:
+    "Your Home for Baseball & Softball Development: Training, Coaching, and Community.",
 };
 
 export default function RootLayout({
@@ -30,6 +32,7 @@ export default function RootLayout({
       >
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );
