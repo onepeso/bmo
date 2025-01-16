@@ -13,7 +13,7 @@ export default function About() {
             Welcome to{" "}
             <span className="font-bold text-orange-500">
               BMO Elite Performance
-            </span>
+            </span>{" "}
             where we develop players to become the best in class while ensuring
             they have fun along the way. Our facility is led by former MLB
             player Miguel Olivo, who played for over 10 years, alongside his
