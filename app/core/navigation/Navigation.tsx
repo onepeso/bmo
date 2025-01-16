@@ -76,7 +76,7 @@ export default function Navigation() {
                     {link.name}
                   </button>
                   {dropdownOpen && (
-                    <div ref={dropdownRef} className="absolute left-0 mt-2 w-56 bg-black text-white rounded shadow-lg">
+                    <div ref={dropdownRef} className="absolute left-0 mt-2 w-56 bg-black text-white rounded shadow-lg z-50">
                       {link.subLinks.map((subLink) => (
                         <Link key={subLink.name} href={subLink.link} onClick={() => { closeMobileMenu(); closeDropdown(); }}>
                           <div className="block px-4 py-2 hover:bg-gray-700">
