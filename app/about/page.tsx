@@ -8,22 +8,27 @@ export default function About() {
         <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-5xl">
           About Us
         </h1>
-        <div className="flex flex-col-reverse gap-5 md:flex-col">
-          <p className="leading-7">
-            Welcome to{" "}
+        <div className="flex flex-col gap-5 leading-7">
+          <p>Welcome to{" "}
             <span className="font-bold text-orange-500">
               BMO Elite Performance
             </span>{" "}
-            where we develop players to become the best in class while ensuring
-            they have fun along the way. Our facility is led by former MLB
-            player Miguel Olivo, who played for over 10 years, alongside his
-            wife Francisca Olivo, who focuses on nutrition to help youth
-            athletes stay healthy and perform their best. We recently moved to
-            West Virginia and made this our home, now aiming to bring our
-            knowledge to help athletes become their best. This is a family-owned
-            business where you become family the minute you walk through our
-            doors.
+            where we are dedicated to developing players to become the best in class while ensuring they have fun
+            along
+            the way. Our facility is led by former MLB player Miguel Olivo, who brings over 10 years of professional
+            baseball experience, and his wife Francisca Olivo, who focuses on the nutritional and motivational aspects
+            to help youth athletes stay healthy and perform at their best.
           </p>
+          <p>Having recently moved to West Virginia, we
+            are excited to make this our home and share our knowledge and passion for sports with the local community.
+            At BMO Elite Performance, we believe in a holistic approach to athletic development, combining expert
+            coaching, tailored nutrition plans, and motivational support to help each athlete reach their full
+            potential.
+          </p>
+
+          <p>As a family-owned business, we pride ourselves on creating a welcoming and supportive
+            environment. The moment you walk through our doors, you become part of our family. Join us at BMO Elite
+            Performance and take the first step towards becoming the best version of yourself.</p>
           <Image
             className="md:h-72 w-full object-cover rounded-lg object-top"
             alt=" About Image"
@@ -145,13 +150,21 @@ export default function About() {
                   width={500}
                   height={500}
                 />
-                <div className="absolute bottom-3 left-0 w-full bg-orange-500 bg-opacity-85 text-white p-2 rounded-b-lg">
+                <div
+                  className="absolute bottom-3 left-0 w-full bg-orange-500 bg-opacity-85 text-white p-2 rounded-b-lg">
                   <h3 className="scroll-m-20 text-xl font-semibold tracking-tight">
                     Miguel Olivo
                   </h3>
-                  <p>Baseball, Fitness, and Nutritional Coach</p>
+                  <p>Baseball and Fitness Coach</p>
                 </div>
+
               </div>
+              <p> Miguel Olivo is a former Major League Baseball player with over 10 years of professional experience.
+                His extensive career in baseball has equipped him with a wealth of knowledge and expertise in the
+                sport. As our Baseball and Fitness Coach, Miguel is dedicated to developing players&#39; skills,
+                enhancing
+                their fitness levels, and fostering a love for the game. His hands-on approach and passion for
+                coaching make him an invaluable asset to our team.</p>
             </article>
             <article className="flex flex-col gap-2">
               <div className="relative">
@@ -162,13 +175,19 @@ export default function About() {
                   width={500}
                   height={500}
                 />
-                <div className="absolute bottom-3 left-0 w-full bg-orange-500 bg-opacity-85 text-white p-2 rounded-b-lg">
+                <div
+                  className="absolute bottom-3 left-0 w-full bg-orange-500 bg-opacity-85 text-white p-2 rounded-b-lg">
                   <h3 className="scroll-m-20 text-xl font-semibold tracking-tight">
                     Francisca Olivo
                   </h3>
-                  <p>Nutritional and Motivation Coach</p>
+                  <p>Nutritionist Coach</p>
                 </div>
               </div>
+              <p>Francisca Olivo brings her expertise in nutrition and motivation to BMO Elite Performance. As our
+                Nutritionist Coach, she focuses on creating personalized nutrition plans that help youth athletes stay
+                healthy and perform at their best. Francisca's holistic approach ensures that our athletes not only
+                excel in their sport but also maintain a balanced and healthy lifestyle. Her dedication to the
+                well-being of our athletes is a cornerstone of our program.</p>
             </article>
           </div>
         </section>

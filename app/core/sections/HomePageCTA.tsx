@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TypingAnimation from "@/components/ui/typing-animation";
 import Link from "next/link";
-import { Button } from "@/components/ui/button"
+import {Button} from "@/components/ui/button"
 
 export default function Home() {
   return (
@@ -17,20 +17,24 @@ export default function Home() {
           className="relative mx-auto max-w-screen-xl px-4 py-32 md:flex md:items-center lg:px-0"
         >
           <div className="max-w-5xl text-center md:text-start">
-            <h1 className="font-extrabold text-white text-2xl lg:text-4xl">Unlock the Power of Excellence with BMO Elite</h1>
-            <TypingAnimation className="text-2xl lg:text-4xl block font-extrabold text-bmo-primary"> Where Innovation Meets Precision </TypingAnimation>
+            <h1 className="font-extrabold text-white text-2xl lg:text-4xl">Unlock the Power of Excellence with BMO
+              Elite</h1>
+            <TypingAnimation className="text-2xl lg:text-4xl block font-extrabold text-bmo-primary"> Where Innovation
+              Meets Precision </TypingAnimation>
 
             <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
               Your Home for Baseball and Softball Development: Training, Coaching, and Community.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 text-center">
-              <Button asChild className="w-full h-fit rounded bg-orange-500 px-12 py-3 text-sm font-medium text-white shadow hover:text-white hover:bg-orange-600 focus:outline-none focus:ring active:text-orange-500 sm:w-auto">
+              <Button asChild
+                      className="w-full h-fit rounded bg-orange-500 px-12 py-3 text-sm font-medium text-white shadow hover:text-white hover:bg-orange-600 focus:outline-none focus:ring active:text-orange-500 sm:w-auto">
                 <Link href="https://bmo-elite-performance.square.site/">
                   Book Now
                 </Link>
               </Button>
-              <Button asChild className="w-full h-fit rounded bg-white px-12 py-3 text-sm font-medium text-orange-500 shadow hover:text-white hover:bg-orange-600 focus:outline-none focus:ring active:text-orange-500 sm:w-auto">
+              <Button asChild
+                      className="w-full h-fit rounded bg-white px-12 py-3 text-sm font-medium text-orange-500 shadow hover:text-white hover:bg-orange-600 focus:outline-none focus:ring active:text-orange-500 sm:w-auto">
                 <Link href="/about">
                   Learn More
                 </Link>
@@ -53,7 +57,13 @@ export default function Home() {
               className="h-64 w-full object-cover sm:h-80 md:h-64 rounded-md"
             />
             <p className="max-w-2xl text-gray-700 mb-5">
-              Welcome to <span className="font-bold text-orange-500">BMO Elite Performance</span>: Where Passion Meets Precision. Our premier training environment, spanning 2800 sqft, combines cutting-edge technology with expert instruction to set the standard for athletic development. The space is equipped with 2 tunnels, a pitching mound, an outside cage for summertime, and exercise equipment for the Power Elite area, where we train athletes to become better, fitter competitors.            </p>
+              Welcome to <span className="font-bold text-orange-500">BMO Elite Performance</span>: Where Passion Meets
+              Precision. Our premier 2800 sq ft indoor facility for baseball and softball combines cutting-edge
+              technology with expert instruction to set the standard for athletic development. The space is equipped
+              with a tunnel for one-on-one or team lessons, a pitching mound, an outdoor cage for summertime, and
+              exercise equipment in our Power Elite area. Here, we train athletes to become better, fitter competitors.
+
+              Join us and take your performance to the next level! </p>
           </div>
         </div>
 
