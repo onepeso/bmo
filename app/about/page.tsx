@@ -185,7 +185,7 @@ export default function About() {
               </div>
               <p>Francisca Olivo brings her expertise in nutrition and motivation to BMO Elite Performance. As our
                 Nutritionist Coach, she focuses on creating personalized nutrition plans that help youth athletes stay
-                healthy and perform at their best. Francisca's holistic approach ensures that our athletes not only
+                healthy and perform at their best. Francisca&#39;s holistic approach ensures that our athletes not only
                 excel in their sport but also maintain a balanced and healthy lifestyle. Her dedication to the
                 well-being of our athletes is a cornerstone of our program.</p>
             </article>
