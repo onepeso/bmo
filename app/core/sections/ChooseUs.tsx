@@ -33,19 +33,16 @@ export const ChooseUs = () => {
 
           </p>
 
-          <p className="text-start sm:text-xl/relaxed my-5">
-
-
-            <li> Chicago White Sox (2002–2004)</li>
+          <ul className="text-start sm:text-xl/relaxed my-5">
+            <li>Chicago White Sox (2002–2004)</li>
             <li>Seattle Mariners (2004–2005, 2011–2012)</li>
             <li>San Diego Padres (2005)</li>
-            <li> Florida Marlins (2006–2007)</li>
-            <li> Kansas City Royals (2008–2009)</li>
-            <li> Colorado Rockies (2010)</li>
+            <li>Florida Marlins (2006–2007)</li>
+            <li>Kansas City Royals (2008–2009)</li>
+            <li>Colorado Rockies (2010)</li>
             <li>Miami Marlins (2013)</li>
-            <li> Los Angeles Dodgers (2014)</li>
-
-          </p>
+            <li>Los Angeles Dodgers (2014)</li>
+          </ul>
           <p className=" mx-auto mt-4 text-start sm:text-xl/relaxed"> Additionally, Miguel played in the Mexican League
             from 2014 to 2017. His extensive career and dedication
             to
