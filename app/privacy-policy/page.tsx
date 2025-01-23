@@ -15,7 +15,8 @@ export default function PrivacyPolicy() {
                     <p>
                         At BMO Elite Performance, we respect your privacy and are committed to protecting it through
                         our compliance with this policy. This policy describes the types of information we may collect
-                        from you or that you may provide when you visit our website (our "Website") and our practices
+                        from you or that you may provide when you visit our website (our &#34;Website&#34;) and our
+                        practices
                         for collecting, using, maintaining, protecting, and disclosing that information.
                     </p>
                 </section>
@@ -152,7 +153,7 @@ export default function PrivacyPolicy() {
                     <p>
                         It is our policy to post any changes we make to our privacy policy on this page. If we make
                         material
-                        changes to how we treat our users' personal information, we will notify you by e-mail to the
+                        changes to how we treat our users&#39; personal information, we will notify you by e-mail to the
                         e-mail
                         address specified in your account and/or through a notice on the Website home page.
                     </p>
