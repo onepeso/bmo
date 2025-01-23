@@ -1,6 +1,3 @@
-// pages/privacy-policy.js
-import React from "react";
-
 export default function PrivacyPolicy() {
     return (
         <div className="bg-gray-100 text-gray-800 min-h-screen py-8 px-4 sm:px-6 lg:px-8">
