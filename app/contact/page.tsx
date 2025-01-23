@@ -43,60 +43,60 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-center justify-center mb-4">
-              <div>
-                <h3 className="font-semibold">Or Contact Us Online</h3>
-                <p>Submit the form below to connect with us.</p>
-              </div>
-            </div>
+            {/*<div className="flex items-center justify-center mb-4">*/}
+            {/*  <div>*/}
+            {/*    <h3 className="font-semibold">Or Contact Us Online</h3>*/}
+            {/*    <p>Submit the form below to connect with us.</p>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </section>
 
           {/* Contact Form Section */}
-          <section>
-            <form>
-              <div>
-                <label className="block mb-2 text-sm font-medium text-gray-700">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  required
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div>
-                <label className="block mb-2 text-sm font-medium text-gray-700">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  required
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div>
-                <label className="block mb-2 text-sm font-medium text-gray-700">
-                  Message
-                </label>
-                <textarea
-                  required
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full p-3 mt-4 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              >
-                Send Message
-              </button>
-            </form>
-          </section>
+          {/*<section>*/}
+          {/*  <form>*/}
+          {/*    <div>*/}
+          {/*      <label className="block mb-2 text-sm font-medium text-gray-700">*/}
+          {/*        Name*/}
+          {/*      </label>*/}
+          {/*      <input*/}
+          {/*        type="text"*/}
+          {/*        required*/}
+          {/*        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"*/}
+          {/*        placeholder="Your Name"*/}
+          {/*      />*/}
+          {/*    </div>*/}
+          {/*    <div>*/}
+          {/*      <label className="block mb-2 text-sm font-medium text-gray-700">*/}
+          {/*        Email*/}
+          {/*      </label>*/}
+          {/*      <input*/}
+          {/*        type="email"*/}
+          {/*        required*/}
+          {/*        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"*/}
+          {/*        placeholder="Your Email"*/}
+          {/*      />*/}
+          {/*    </div>*/}
+          {/*    <div>*/}
+          {/*      <label className="block mb-2 text-sm font-medium text-gray-700">*/}
+          {/*        Message*/}
+          {/*      </label>*/}
+          {/*      <textarea*/}
+          {/*        required*/}
+          {/*        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"*/}
+          {/*        placeholder="Your Message"*/}
+          {/*      ></textarea>*/}
+          {/*    </div>*/}
+          {/*    <button*/}
+          {/*      type="submit"*/}
+          {/*      className="w-full p-3 mt-4 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"*/}
+          {/*    >*/}
+          {/*      Send Message*/}
+          {/*    </button>*/}
+          {/*  </form>*/}
+          {/*</section>*/}
         </div>
-      </div >
+      </div>
 
-    </main >
+    </main>
   );
 }

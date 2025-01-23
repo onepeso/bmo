@@ -70,7 +70,7 @@ export default function About() {
           <p className="leading-7 [&:not(:first-child)]:mt-4">• Pitching</p>
           <p className="leading-7 [&:not(:first-child)]:mt-4">• Fielding</p>
           <p className="leading-7 [&:not(:first-child)]:mt-4">
-            • Agility and strength
+            • Agility, Speed and Strength
           </p>
           <p className="leading-7 [&:not(:first-child)]:mt-4">
             • Parties: Contact us at: 681-260-1421{" "}
@@ -84,6 +84,13 @@ export default function About() {
           <Image
             className="w-full h-72 object-cover object-top rounded-lg"
             alt="Facility Pictures"
+            src="/images/training-bmo.webp"
+            width={500}
+            height={500}
+          />
+          <Image
+            className="w-full h-72 object-cover object-top rounded-lg"
+            alt="Facility Pictures"
             src="/images/bmo-3.webp"
             width={500}
             height={500}
@@ -92,6 +99,13 @@ export default function About() {
             className="w-full h-72 object-cover object-center rounded-lg"
             alt="Facility Pictures"
             src="/images/bmo-4.webp"
+            width={500}
+            height={500}
+          />
+          <Image
+            className="w-full h-72 object-cover object-top rounded-lg"
+            alt="Facility Pictures"
+            src="/images/training-bmo4.webp"
             width={500}
             height={500}
           />
@@ -120,6 +134,13 @@ export default function About() {
             className="w-full h-72 object-cover object-top rounded-lg"
             alt="Facility Pictures"
             src="/images/bmo-1.webp"
+            width={500}
+            height={500}
+          />
+          <Image
+            className="w-full h-72 object-cover object-center rounded-lg"
+            alt="Facility Pictures"
+            src="/images/training-bmo5.webp"
             width={500}
             height={500}
           />

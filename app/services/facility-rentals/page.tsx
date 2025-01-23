@@ -49,9 +49,9 @@ export default function FacilityRental() {
           <Image
             className="w-full h-32 object-cover rounded-lg"
             alt="Facility Pictures"
-            src="/images/pattern1.svg"
-            width={500}
-            height={500}
+            src="/images/baseball-stadium.webp"
+            width={1000}
+            height={1000}
           />
         </div>
       </section>
@@ -63,42 +63,63 @@ export default function FacilityRental() {
           <Image
             className="w-full h-72 object-cover rounded-lg"
             alt="Facility Pictures"
-            src="/images/bmo-training-2.webp"
-            width={500}
-            height={500}
-          />
-          <Image
-            className="w-full h-72 object-cover object-top rounded-lg"
-            alt="Facility Pictures"
-            src="/images/bmo-training-3.webp"
-            width={500}
-            height={500}
-          />
-          <Image
-            className="w-full h-72 object-cover rounded-lg"
-            alt="Facility Pictures"
-            src="/images/bmo-training-9.webp"
+            src="/images/bmo-training-11.webp"
             width={500}
             height={500}
           />
           <Image
             className="w-full h-72 object-cover object-center rounded-lg"
             alt="Facility Pictures"
-            src="/images/bmo-training-6.webp"
+            src="/images/training-bmo8.webp"
+            width={500}
+            height={500}
+          />
+          <Image
+            className="w-full h-72 object-cover rounded-lg"
+            alt="Facility Pictures"
+            src="/images/training-bmo9.webp"
+            width={500}
+            height={500}
+          />
+          <Image
+            className="w-full h-72 object-cover object-center rounded-lg"
+            alt="Facility Pictures"
+            src="/images/training-bmo2.webp"
             width={500}
             height={500}
           />
           <Image
             className="w-full h-72 object-cover object-top rounded-lg"
             alt="Facility Pictures"
-            src="/images/bmo-training-14.webp"
+            src="/images/training-bmo13.webp"
             width={500}
             height={500}
           />
           <Image
             className="w-full h-72 object-cover object-top rounded-lg"
             alt="Facility Pictures"
-            src="/images/bmo-training-5.webp"
+            src="/images/training-bmo10.webp"
+            width={500}
+            height={500}
+          />
+          <Image
+            className="w-full h-72 object-cover object-top rounded-lg"
+            alt="Facility Pictures"
+            src="/images/training-bmo3.webp"
+            width={500}
+            height={500}
+          />
+          <Image
+            className="w-full h-72 object-cover object-top rounded-lg"
+            alt="Facility Pictures"
+            src="/images/training-bmo6.webp"
+            width={500}
+            height={500}
+          />
+          <Image
+            className="w-full h-72 object-cover object-top rounded-lg"
+            alt="Facility Pictures"
+            src="/images/training-bmo7.webp"
             width={500}
             height={500}
           />

@@ -26,7 +26,7 @@ export default function CampAndEvents() {
           <Image
             className="w-full h-32 object-cover rounded-lg"
             alt="Facility Pictures"
-            src="/images/pattern1.svg"
+            src="/images/kid-baseball.webp"
             width={500}
             height={500}
           />

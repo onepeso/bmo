@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -47,7 +47,7 @@ export default function Oneonone() {
           <Image
             className="w-full h-32 object-cover rounded-lg"
             alt="Facility Pictures"
-            src="/images/pattern1.svg"
+            src="/images/playing-baseball.webp"
             width={500}
             height={500}
           />
@@ -100,7 +100,6 @@ export default function Oneonone() {
             width={500}
             height={500}
           />
-          <div></div>
         </div>
       </section>
     </main>
