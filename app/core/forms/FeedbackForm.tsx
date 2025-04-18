@@ -1,3 +1,6 @@
+//NOTE: No longer using Tally form, but can be used again if needed. I will leave here for now.
+//PS. To see the feedback main component go to /core/forms/FeedbackForm
+
 import Head from 'next/head'
 
 export const FeedbackForm = () => {
