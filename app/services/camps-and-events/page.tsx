@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CampAndEvents() {
   return (
@@ -36,8 +38,34 @@ export default function CampAndEvents() {
         <h4 className="scroll-m-20 text-xl font-semibold tracking-tight my-5">
           Our Upcoming Camps
         </h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <p>No Camps Currently...</p>
+        {/* Going to make this later with images of camps but for now it will just be text. */}
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
+          <p className="">
+            Summer Camp at BMO Elite #1
+            <Link
+              href="https://tally.so/r/3l5BE5"
+              target="_blank"
+              rel="noopener noreferrer"
+              prefetch={true}
+            >
+              <Button className="ml-2 bg-orange-500 hover:bg-orange-600">
+                Register
+              </Button>
+            </Link>
+          </p>
+          <p>
+            Summer Camp at BMO Elite #2
+            <Link
+              href="https://tally.so/r/3EgKj2"
+              target="_blank"
+              rel="noopener noreferrer"
+              prefetch={true}
+            >
+              <Button className="ml-2 bg-orange-500 hover:bg-orange-600">
+                Register
+              </Button>
+            </Link>
+          </p>
         </div>
       </section>
       <section className="p-5 lg:p-0">
