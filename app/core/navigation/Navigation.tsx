@@ -1,11 +1,12 @@
 "use client";
 
-import {useState, useRef, useEffect} from "react";
-import {HiMiniBars3, HiMiniXMark} from "react-icons/hi2";
-import {FaFacebookSquare, FaInstagram, FaYoutube} from "react-icons/fa";
-import {AiFillTikTok} from "react-icons/ai";
+import { useState, useRef, useEffect } from "react";
+import { HiMiniBars3, HiMiniXMark } from "react-icons/hi2";
+import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
+import CustomBanner from "@/app/components/custom-banner/CustomBanner";
 
 export default function Navigation() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -15,25 +16,24 @@ export default function Navigation() {
   const formsDropdownRef = useRef<HTMLDivElement>(null);
 
   const menuLinks = [
-    {name: "Home", link: "/"},
-    {name: "About", link: "/about"},
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
     {
       name: "Services",
       subLinks: [
-        {name: "One-on-One", link: "/services/oneonone"},
-        {name: "Facility Rentals", link: "/services/facility-rentals"},
-        {name: "Camps and Events", link: "/services/camps-and-events"},
+        { name: "One-on-One", link: "/services/oneonone" },
+        { name: "Facility Rentals", link: "/services/facility-rentals" },
+        { name: "Camps and Events", link: "/services/camps-and-events" },
       ],
     },
-    {name: "Contact", link: "/contact"},
+    { name: "Contact", link: "/contact" },
     {
       name: "Forms",
       subLinks: [
-        {name: "Waiver Form", link: "/waiver"},
-        {name: "Feedback Form", link: "/feedback"},
+        { name: "Waiver Form", link: "/waiver" },
+        { name: "Feedback Form", link: "/feedback" },
       ],
     },
-
   ];
 
   const handleMenuClick = () => {
@@ -65,8 +65,10 @@ export default function Navigation() {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
-        (servicesDropdownRef.current && !servicesDropdownRef.current.contains(event.target as Node)) &&
-        (formsDropdownRef.current && !formsDropdownRef.current.contains(event.target as Node))
+        servicesDropdownRef.current &&
+        !servicesDropdownRef.current.contains(event.target as Node) &&
+        formsDropdownRef.current &&
+        !formsDropdownRef.current.contains(event.target as Node)
       ) {
         closeDropdowns();
       }
@@ -80,24 +82,40 @@ export default function Navigation() {
 
   return (
     <>
+      <CustomBanner />
       <header className="bg-black p-5">
         <nav className="mx-auto max-w-screen-xl text-white flex items-center justify-between">
           <Link href="/">
-            <Image src="/images/bmo-logo.png" width={100} height={10} alt="bmo-logo"/>
+            <Image
+              src="/images/bmo-logo.png"
+              width={100}
+              height={10}
+              alt="bmo-logo"
+            />
           </Link>
           <div className="gap-3 hidden md:flex flex-1 justify-center">
-            {menuLinks.map((link) => (
+            {menuLinks.map((link) =>
               link.subLinks ? (
                 <div key={link.name} className="relative">
                   <button
-                    onClick={link.name === "Services" ? toggleServicesDropdown : toggleFormsDropdown}
+                    onClick={
+                      link.name === "Services"
+                        ? toggleServicesDropdown
+                        : toggleFormsDropdown
+                    }
                     className="text-white hover:text-bmo-primary transition-colors"
                   >
                     {link.name}
                   </button>
-                  {(link.name === "Services" ? servicesDropdownOpen : formsDropdownOpen) && (
+                  {(link.name === "Services"
+                    ? servicesDropdownOpen
+                    : formsDropdownOpen) && (
                     <div
-                      ref={link.name === "Services" ? servicesDropdownRef : formsDropdownRef}
+                      ref={
+                        link.name === "Services"
+                          ? servicesDropdownRef
+                          : formsDropdownRef
+                      }
                       className="absolute left-0 mt-2 w-56 bg-black text-white rounded shadow-lg z-50"
                     >
                       {link.subLinks.map((subLink) => (
@@ -126,21 +144,30 @@ export default function Navigation() {
                 >
                   {link.name}
                 </Link>
-              )
-            ))}
+              ),
+            )}
           </div>
           <div className="gap-2 hidden md:flex">
             <Link href="https://www.facebook.com/BMOElitePerformance">
-              <FaFacebookSquare className="text-white hover:text-bmo-primary" size={20}/>
+              <FaFacebookSquare
+                className="text-white hover:text-bmo-primary"
+                size={20}
+              />
             </Link>
             <Link href="https://www.tiktok.com/@bmo.elite.perform">
-              <AiFillTikTok className="hover:text-bmo-primary" size={21}/>
+              <AiFillTikTok className="hover:text-bmo-primary" size={21} />
             </Link>
             <Link href="https://www.instagram.com/BMOElite21">
-              <FaInstagram className="text-white hover:text-bmo-primary" size={21}/>
+              <FaInstagram
+                className="text-white hover:text-bmo-primary"
+                size={21}
+              />
             </Link>
             <Link href="https://www.youtube.com/@BMOElite2321">
-              <FaYoutube className="text-white hover:text-bmo-primary" size={21}/>
+              <FaYoutube
+                className="text-white hover:text-bmo-primary"
+                size={21}
+              />
             </Link>
           </div>
 
@@ -151,27 +178,42 @@ export default function Navigation() {
             aria-label="Toggle Menu"
           >
             {!mobileMenu ? (
-              <HiMiniBars3 size={24}/>
+              <HiMiniBars3 size={24} />
             ) : (
-              <HiMiniXMark className="text-white" size={30}/>
+              <HiMiniXMark className="text-white" size={30} />
             )}
           </button>
           {mobileMenu && (
             <div className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center">
               <nav className="flex flex-col items-center space-y-8 text-xl">
-                <Image src="/images/bmo-logo.png" width={150} height={10} alt="bmo-logo"/>
-                {menuLinks.map((link) => (
+                <Image
+                  src="/images/bmo-logo.png"
+                  width={150}
+                  height={10}
+                  alt="bmo-logo"
+                />
+                {menuLinks.map((link) =>
                   link.subLinks ? (
                     <div key={link.name} className="relative">
                       <button
-                        onClick={link.name === "Services" ? toggleServicesDropdown : toggleFormsDropdown}
+                        onClick={
+                          link.name === "Services"
+                            ? toggleServicesDropdown
+                            : toggleFormsDropdown
+                        }
                         className="text-white hover:text-orange-500 transition-colors"
                       >
                         {link.name}
                       </button>
-                      {(link.name === "Services" ? servicesDropdownOpen : formsDropdownOpen) && (
+                      {(link.name === "Services"
+                        ? servicesDropdownOpen
+                        : formsDropdownOpen) && (
                         <div
-                          ref={link.name === "Services" ? servicesDropdownRef : formsDropdownRef}
+                          ref={
+                            link.name === "Services"
+                              ? servicesDropdownRef
+                              : formsDropdownRef
+                          }
                           className="absolute left-0 mt-2 w-56 bg-black text-white rounded shadow-lg"
                         >
                           {link.subLinks.map((subLink) => (
@@ -200,8 +242,8 @@ export default function Navigation() {
                     >
                       {link.name}
                     </Link>
-                  )
-                ))}
+                  ),
+                )}
               </nav>
             </div>
           )}
