@@ -8,7 +8,7 @@ const CustomBanner = () => {
         Our first summer camps happening this June and July 2025!{" "}
       </p>
       <Link href="/services/camps-and-events">
-        <Button variant={"secondary"}> Register </Button>
+        <Button variant={"secondary"}> Learn More </Button>
       </Link>
     </section>
   );
