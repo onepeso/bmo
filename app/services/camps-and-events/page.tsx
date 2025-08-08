@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function CampAndEvents() {
   return (
@@ -39,7 +37,10 @@ export default function CampAndEvents() {
           Our Upcoming Camps
         </h4>
         {/* Going to make this later with images of camps but for now it will just be text. */}
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <p>No Camps Currently...</p>
+        </div>
+        {/* <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
           <p className="">
             Summer Camp at BMO Elite #1
             <Link
@@ -66,7 +67,7 @@ export default function CampAndEvents() {
               </Button>
             </Link>
           </p>
-        </div>
+        </div> */}
       </section>
       <section className="p-5 lg:p-0">
         <h4 className="scroll-m-20 text-xl font-semibold tracking-tight my-5">
