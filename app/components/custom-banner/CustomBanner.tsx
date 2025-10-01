@@ -10,6 +10,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import Link from "next/link";
 
 const CustomBanner = () => {
   return (
@@ -24,7 +25,7 @@ const CustomBanner = () => {
         <AlertDialogTrigger className="p-1 text-sm bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm">
           Learn More
         </AlertDialogTrigger>
-        <AlertDialogContent>
+        <AlertDialogContent className="max-w-5xl">
           <AlertDialogHeader>
             <AlertDialogTitle>
               <span className="text-orange-500">New Coach Alert</span> - Welcome
@@ -34,7 +35,7 @@ const CustomBanner = () => {
               <Image
                 className="w-full h-[400px] object-cover object-top rounded-lg mb-3"
                 alt="Tony Allen Coach"
-                src="/images/tonyallen.webp"
+                src="/images/tonyallen2.webp"
                 width={500}
                 height={500}
               />
@@ -52,7 +53,8 @@ const CustomBanner = () => {
               perfect fit for our athletes looking to elevate their performance
               to the next level.
             </p>
-            <p className="text-orange-500 font-bold">Contact Coach Tony directly at: 304-240-8427</p>
+            <p className="text-orange-500 font-bold">Contact Coach Tony directly at: 304-240-8427 or <Link href={"https://aandtathletictraining.setmore.com/book?step=time-slot&products=s95b03081fdc460a143e7fc96d13ac1881765204e&type=service&staff=ra7c3031d2565a742479c5c21769ac6190b26f2de-d&staffSelected=true"}>Book Now Online</Link></p>
+
             <p>
               Hel us give Coach Tony a warm welcome as he joins our mission to
               build stronger, smarter, and more competitive players!

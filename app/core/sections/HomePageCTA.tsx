@@ -29,7 +29,7 @@ export default function Home() {
                 asChild
                 className="w-full h-fit rounded bg-orange-500 px-12 py-3 text-sm font-medium text-white shadow hover:text-white hover:bg-orange-600 focus:outline-none focus:ring active:text-orange-500 sm:w-auto"
               >
-                <Link href="https://bmo-elite-performance.square.site/">
+                <Link href="https://www.bmoeliteperformance.com/booking">
                   Book Now
                 </Link>
               </Button>
