@@ -1,12 +1,25 @@
 'use client'
 
 import React from 'react';
-import { Award, Calendar, Users, Briefcase } from 'lucide-react';
+import { Award, Calendar, Briefcase } from 'lucide-react';
 
 /**
  * Placeholder data for the coaches.
  * In a real Next.js application, this would likely come from an API or static file.
+ * 
+ * 
  */
+
+interface Coach {
+  id: number;
+  name: string;
+  title: string;
+  specialty: string;
+  bio: string;
+  imageUrl: string; // Now points to a path in the /public folder
+  bookLink: string;
+}
+
 const COACHES_DATA = [
   {
     id: 1,
@@ -32,7 +45,7 @@ const COACHES_DATA = [
  * Component for a single coach's profile card.
  * Designed with a flexible layout for mobile (stacked) and desktop (side-by-side).
  */
-const CoachCard = ({ coach }: any) => (
+const CoachCard = ({ coach }: { coach: Coach }) => (
   <article 
     className="bg-white p-6 shadow-2xl rounded-xl transition-transform hover:scale-[1.02] duration-300 border-t-4 border-orange-600"
     aria-labelledby={`coach-name-${coach.id}`}
