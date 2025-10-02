@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import { Award, Calendar, Briefcase,PhoneCallIcon } from 'lucide-react';
+import { Award, Calendar, Briefcase } from 'lucide-react';
 
 /**
  * Placeholder data for the coaches.
