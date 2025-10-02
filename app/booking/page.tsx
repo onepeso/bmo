@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import { Award, Calendar, Briefcase } from 'lucide-react';
+import { Award, Calendar, Briefcase,PhoneCallIcon } from 'lucide-react';
 
 /**
  * Placeholder data for the coaches.
@@ -33,8 +33,8 @@ const COACHES_DATA = [
   {
     id: 2,
     name: "Tony Allen",
-    title: "Softball Coach",
-    specialty: "Softball",
+    title: "Baseball and Softball Coach",
+    specialty: "Baseball and Softball",
     bio: "Tony brings a strong and focused background in softball, with years of experience training and developing athletes in: Pitching, Hitting, and Speed & Agility.",
     imageUrl: "/images/tonyallen.webp",
     bookLink: "https://aandtathletictraining.setmore.com/book?step=time-slot&products=s95b03081fdc460a143e7fc96d13ac1881765204e&type=service&staff=ra7c3031d2565a742479c5c21769ac6190b26f2de-d&staffSelected=true"
@@ -143,9 +143,10 @@ const BookingPage = () => {
       {/* Footer/CTA Section (Semantic Enhancement) */}
       <footer className="mt-16 pt-8 border-t border-gray-200 text-center">
         <p className="text-sm text-gray-500">
-          Not sure who to pick? Contact us for a free 15-minute consultation to find your perfect match.
+          Not sure who to pick? Contact us to find your perfect match.
         </p>
-        <p>+1 681-260-1421</p>
+        
+        <p> 681-260-1421 <span className='font-bold'>or</span> 410-322-9273</p>
       </footer>
     </main>
   );
