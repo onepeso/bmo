@@ -20,7 +20,8 @@ export default function Contact() {
             <div className="flex items-center justify-center mb-4">
               <div>
                 <h3 className="font-semibold">Call or Visit</h3>
-                <p>+1 681-260-1421</p>
+                <p><span className="font-bold text-orange-500">Miguel: </span>+1 681-260-1421</p>
+                <p><span className="font-bold text-orange-500">Francisca: </span>+1 410-322-9273</p>
                 <p>olivobaseball2121@gmail.com</p>
                 <p>761 opequon LN, Kearneysville WV</p>
                 <div className="px-0">
