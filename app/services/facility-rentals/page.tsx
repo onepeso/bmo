@@ -88,13 +88,13 @@ export default function FacilityRental() {
             width={500}
             height={500}
           />
-          <Image
+          {/* <Image
             className="w-full h-72 object-cover object-top rounded-lg"
             alt="Facility Pictures"
             src="/images/training-bmo13.webp"
             width={500}
             height={500}
-          />
+          /> */}
           <Image
             className="w-full h-72 object-cover object-top rounded-lg"
             alt="Facility Pictures"
