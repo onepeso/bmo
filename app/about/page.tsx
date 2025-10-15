@@ -449,14 +449,22 @@ export default function About() {
               <div className="space-y-6">
                 <div className="flex items-center gap-4 group">
                   <span className="font-semibold text-lg text-gray-600">
-                    Phone:
+                  Phone:
                   </span>
                   <a
                     href="tel:681-260-1421"
                     className="text-orange-500 hover:text-orange-600 transition-all duration-300 text-lg font-medium group-hover:translate-x-1"
                     aria-label="Call us at 681-260-1421"
                   >
-                    681-260-1421
+                    681-260-1421 
+                  </a>
+                  <p>or</p>
+                  <a
+                    href="tel:410-322-9273"
+                    className="text-orange-500 hover:text-orange-600 transition-all duration-300 text-lg font-medium group-hover:translate-x-1"
+                    aria-label="Call us at 410-322-9273"
+                  >
+                    410-322-9273
                   </a>
                 </div>
                 <div className="flex items-center gap-4 group">
