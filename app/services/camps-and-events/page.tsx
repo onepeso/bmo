@@ -32,7 +32,7 @@ export default function CampAndEvents() {
           />
         </div>
       </section>
-      <section className="p-5 lg:p-0">
+      <section className="p-10 lg:p-0">
         <h4 className="scroll-m-20 text-xl font-semibold tracking-tight my-5">
           Our Upcoming Camps
         </h4>
@@ -68,8 +68,7 @@ export default function CampAndEvents() {
             </Link>
           </p>
         </div> */}
-      </section>
-      <section className="p-5 lg:p-0">
+        
         <h4 className="scroll-m-20 text-xl font-semibold tracking-tight my-5">
           Our Upcoming Events
         </h4>
@@ -77,6 +76,7 @@ export default function CampAndEvents() {
           <p>No Events Currently...</p>
         </div>
       </section>
+      
     </main>
   );
 }
