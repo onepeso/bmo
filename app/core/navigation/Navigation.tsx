@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef} from "react";
 // Restoring original external icon imports
 import { HiMiniBars3, HiMiniXMark } from "react-icons/hi2";
 import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
