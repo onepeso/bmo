@@ -1,27 +1,28 @@
 import Image from "next/image";
 import {
-  AlertDialog,
-  AlertDialogAction,
+  // AlertDialog,
+  // AlertDialogAction,
   // AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
+  // AlertDialogContent,
+  // AlertDialogDescription,
+  // AlertDialogFooter,
+  // AlertDialogHeader,
+  // AlertDialogTitle,
+  // AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const CustomBanner = () => {
   return (
     <section className="bg-orange-500 p-2 flex flex-col md:flex-row md:justify-center items-center gap-2">
       <p className="text-sm font-bold text-white">
-        Welcome Tony Allen to the BMO Elite Team!
+        Check our Camps and Events!
       </p>
-      {/* <Link href="/services/camps-and-events">
-        <Button variant={"secondary"}> Learn More </Button>
-      </Link> */}
-      <AlertDialog>
+      <Link href="https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes?buttonTextColor=ffffff&color=000000&locale=en&referrer=so">
+        <Button variant={"secondary"}> Book Now </Button>
+      </Link>
+      {/* <AlertDialog>
         <AlertDialogTrigger className="p-1 text-sm bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm">
           Learn More
         </AlertDialogTrigger>
@@ -66,7 +67,7 @@ const CustomBanner = () => {
             <AlertDialogAction>Close</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
-      </AlertDialog>
+      </AlertDialog> */}
     </section>
   );
 };
