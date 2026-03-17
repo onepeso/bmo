@@ -1,12 +1,16 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Contact() {
   return (
     <main>
       <section className=" mx-auto max-w-screen-xl flex flex-col gap-5 p-10 md:px-0 md:py-10 mb-5">
-        <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-5xl">Reach Out </h1>
+        <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-5xl">
+          Reach Out{" "}
+        </h1>
         <div className="flex flex-col-reverse gap-5 md:flex-col">
-          <p className="leading-7">Have questions or feedback? We&apos;re just a message away!</p>
+          <p className="leading-7">
+            Have questions or feedback? We&apos;re just a message away!
+          </p>
         </div>
       </section>
       <div className="flex items-center justify-center bg-gray-100 p-5 lg:p-0">
@@ -20,9 +24,20 @@ export default function Contact() {
             <div className="flex items-center justify-center mb-4">
               <div>
                 <h3 className="font-semibold">Call or Visit</h3>
-                <p><span className="font-bold text-orange-500">Miguel: </span>+1 681-260-1421</p>
-                <p><span className="font-bold text-orange-500">Francisca: </span>+1 410-322-9273</p>
-                <p>olivobaseball2121@gmail.com</p>
+                <p>
+                  <span className="font-bold text-orange-500">Miguel: </span>+1
+                  681-260-1421
+                </p>
+                <p>
+                  <span className="font-bold text-orange-500">Francisca: </span>
+                  +1 410-322-9273
+                </p>
+                <a
+                  href="mailto:info@bmoeliteperformance.com"
+                  className="text-orange-400 hover:text-orange-500 transition-colors underline"
+                >
+                  info@bmoeliteperformance.com
+                </a>
                 <p>761 opequon LN, Kearneysville WV</p>
                 <div className="px-0">
                   <iframe
@@ -97,7 +112,6 @@ export default function Contact() {
           {/*</section>*/}
         </div>
       </div>
-
     </main>
   );
 }
