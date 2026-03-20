@@ -1,74 +1,139 @@
 import Image from "next/image";
 import Link from "next/link";
-import {Button} from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import { Award, Star, History, Calendar } from "lucide-react";
 
 export const ChooseUs = () => {
-  return (
-    <section className="bg-gray-900 text-white">
-      <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:items-center">
-        <div className="mx-auto max-w-3xl text-center ">
-          <h1
-            className="bg-gradient-to-r from-orange-300 via-orange-500 to-orange-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
-          >
-            Why Choose Us?
+  const stats = [
+    { label: "Home Runs", value: "145" },
+    { label: "RBIs", value: "490" },
+    { label: "MLB Seasons", value: "13" },
+    { label: "Avg", value: ".240" },
+  ];
 
-          </h1>
-          <div className="flex flex-col items-center py-10">
-            <Image
-              src="/images/olivo.webp" alt={""} width={500} height={500}
-            />
+  const teams = [
+    "Chicago White Sox",
+    "Seattle Mariners",
+    "San Diego Padres",
+    "Florida Marlins",
+    "Kansas City Royals",
+    "Colorado Rockies",
+    "Miami Marlins",
+    "Los Angeles Dodgers",
+  ];
+
+  return (
+    <section className="relative bg-slate-950 py-24 overflow-hidden">
+      {/* Decorative background glow */}
+      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[500px] h-[500px] bg-orange-600/10 blur-[120px] rounded-full" />
+
+      <div className="mx-auto max-w-screen-xl px-4 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left Side: Visual Profile */}
+          <div className="relative">
+            <div className="relative z-10 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-500">
+              <Image
+                src="/images/olivo.webp"
+                alt="Miguel Olivo MLB Catcher"
+                width={600}
+                height={700}
+                className="w-full h-auto object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
+
+              {/* Floating Name Badge */}
+              <div className="absolute bottom-8 left-8">
+                <p className="text-orange-500 font-black tracking-widest uppercase text-sm mb-1">
+                  Founder & Lead Instructor
+                </p>
+                <h2 className="text-4xl font-black text-white">Miguel Olivo</h2>
+              </div>
+            </div>
+
+            {/* Stat Grid Overlaying Image edge */}
+            <div className="grid grid-cols-2 gap-4 mt-8">
+              {stats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-2xl text-center"
+                >
+                  <p className="text-orange-500 text-2xl font-black">
+                    {stat.value}
+                  </p>
+                  <p className="text-slate-400 text-xs uppercase font-bold tracking-tighter">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
+          {/* Right Side: Narrative */}
+          <div className="flex flex-col">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 w-fit mb-6">
+              <Star className="w-4 h-4 text-orange-500 fill-orange-500" />
+              <span className="text-orange-400 text-xs font-bold uppercase tracking-widest">
+                MLB Veteran Leadership
+              </span>
+            </div>
 
-          <p className="mx-auto mt-4 text-start sm:text-xl/relaxed">
-            BMO Elite is proud to be led by former MLB catcher Miguel Olivo, who brings a wealth of experience and
-            expertise to our program. Born on July 15, 1978, in Villa Vásquez, Dominican Republic, Miguel batted and
-            threw right-handed. He made his MLB debut on September 15, 2002, for the Chicago White Sox and had his last
-            MLB appearance on May 11, 2014, for the Los Angeles Dodgers. Over his career, he achieved a batting average
-            of .240, hit 145 home runs, and had 490 runs batted in.</p>
+            <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-8">
+              Learn from the <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
+                Pro Perspective
+              </span>
+            </h2>
 
-          <p className="mx-auto mt-4 text-start sm:text-xl/relaxed">
-            Miguel Olivo&#39;s MLB journey included playing for the following teams:
+            <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
+              <p>
+                BMO Elite is proud to be led by former MLB catcher{" "}
+                <span className="text-white font-semibold">Miguel Olivo</span>.
+                With a career spanning over a decade in the big leagues, Miguel
+                brings a level of expertise that can't be found elsewhere.
+              </p>
+              <p>
+                Debuting in 2002 for the Chicago White Sox, Miguel became known
+                for his explosive power and defensive precision. His journey
+                through the MLB saw him take the field for some of the league's
+                most iconic franchises.
+              </p>
+            </div>
 
+            {/* Team Experience Section */}
+            <div className="mt-10 p-6 rounded-3xl bg-white/5 border border-white/10">
+              <div className="flex items-center gap-3 mb-4 text-white font-bold">
+                <History className="text-orange-500" size={20} />
+                <h3>MLB Career Journey</h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
+                {teams.map((team) => (
+                  <div
+                    key={team}
+                    className="flex items-center gap-2 text-sm text-slate-400"
+                  >
+                    <div className="w-1.5 h-1.5 rounded-full bg-orange-600" />
+                    {team}
+                  </div>
+                ))}
+              </div>
+            </div>
 
-          </p>
-
-          <ul className="text-start sm:text-xl/relaxed my-5">
-            <li>Chicago White Sox (2002–2004)</li>
-            <li>Seattle Mariners (2004–2005, 2011–2012)</li>
-            <li>San Diego Padres (2005)</li>
-            <li>Florida Marlins (2006–2007)</li>
-            <li>Kansas City Royals (2008–2009)</li>
-            <li>Colorado Rockies (2010)</li>
-            <li>Miami Marlins (2013)</li>
-            <li>Los Angeles Dodgers (2014)</li>
-          </ul>
-          <p className=" mx-auto mt-4 text-start sm:text-xl/relaxed"> Additionally, Miguel played in the Mexican League
-            from 2014 to 2017. His extensive career and dedication
-            to
-            the sport make him an invaluable leader at BMO Elite.</p>
-
-
-          <div className=" mt-8 flex flex-wrap justify-center gap-4">
-            <Button asChild
-                    className=" w-full h-fit rounded bg-orange-500 px-12 py-3 text-sm font-medium text-white shadow
-              hover:text-white hover:bg-orange-600 focus:outline-none focus:ring active:text-orange-500 sm:w-auto">
-              <Link href=" https://www.bmoeliteperformance.com/booking">
-                Book Now
-              </Link>
-            </Button>
-
-            <a
-              className="block w-full rounded border border-orange-600 px-12 py-3 text-sm font-medium text-white hover:bg-orange-600 focus:outline-none focus:ring active:bg-orange-500 sm:w-auto"
-              href="about"
-            >
-              Learn More
-            </a>
+            {/* CTA Buttons */}
+            <div className="mt-12 flex flex-wrap gap-4">
+              <Button
+                asChild
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-7 rounded-xl transition-all hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]"
+              >
+                <Link href="https://www.bmoeliteperformance.com/booking">
+                  Book Training
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-  )
-    ;
+  );
 };
