@@ -1,72 +1,116 @@
 import {
-  // AlertDialog,
-  // AlertDialogAction,
-  // AlertDialogCancel,
-  // AlertDialogContent,
-  // AlertDialogDescription,
-  // AlertDialogFooter,
-  // AlertDialogHeader,
-  // AlertDialogTitle,
-  // AlertDialogTrigger,
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Megaphone, Sparkles, X } from "lucide-react";
 
 const CustomBanner = () => {
   return (
-    <section className="bg-orange-500 p-2 flex flex-col md:flex-row md:justify-center items-center gap-2">
-      <p className="text-sm font-bold text-white">
-        Check our Camps and Events!
-      </p>
-      <Link href="https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes?buttonTextColor=ffffff&color=000000&locale=en&referrer=so">
-        <Button variant={"secondary"}> Book Now </Button>
-      </Link>
-      {/* <AlertDialog>
-        <AlertDialogTrigger className="p-1 text-sm bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm">
-          Learn More
-        </AlertDialogTrigger>
-        <AlertDialogContent className="max-w-5xl">
-          <AlertDialogHeader>
-            <AlertDialogTitle>
-              <span className="text-orange-500">New Coach Alert</span> - Welcome
-              Tony Allen to the BMO Elite Team!
-            </AlertDialogTitle>
-            <AlertDialogDescription className="text-orange-500">
-              <Image
-                className="w-full h-[400px] object-cover object-top rounded-lg mb-3"
-                alt="Tony Allen Coach"
-                src="/images/tonyallen2.webp"
-                width={500}
-                height={500}
-              />
-              We&apos;re excited to officially welcome Coach Tony Allen to the BMO
-              Elite Performance family starting September 1st!
-            </AlertDialogDescription>
-            <div className="flex flex-col gap-3">
-<p>
-              Tony Brings a strong and focused background in softball, with
-              years of experience training and developing athletes in: <span className="text-orange-500">Pitching,
-              Hitting, Speed & Agility.</span>
-            </p>
-            <p>
-              His intense training style and passion for the game make him a
-              perfect fit for our athletes looking to elevate their performance
-              to the next level.
-            </p>
-            <p className="text-orange-500 font-bold">Contact Coach Tony directly at: 304-240-8427 or <Link href={"https://aandtathletictraining.setmore.com/book?step=time-slot&products=s95b03081fdc460a143e7fc96d13ac1881765204e&type=service&staff=ra7c3031d2565a742479c5c21769ac6190b26f2de-d&staffSelected=true"}>Book Now Online</Link></p>
+    <section className="relative overflow-hidden bg-gradient-to-r from-orange-600 via-orange-500 to-orange-600 px-4 py-3 shadow-md">
+      {/* Subtle background pattern/texture */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
+      </div>
 
-            <p>
-              Hel us give Coach Tony a warm welcome as he joins our mission to
-              build stronger, smarter, and more competitive players!
-            </p>
-            </div>
-            
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogAction>Close</AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog> */}
+      <div className="relative z-10 mx-auto max-w-screen-xl flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+        <div className="flex items-center gap-2">
+          <div className="hidden sm:flex h-8 w-8 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
+            <Megaphone className="h-4 w-4 text-white" />
+          </div>
+          <p className="text-sm md:text-base font-black text-white uppercase tracking-wider italic">
+            Check out our new Camps & Events!
+          </p>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <Link href="https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes?buttonTextColor=ffffff&color=000000&locale=en&referrer=so">
+            <Button
+              size="sm"
+              className="bg-slate-950 hover:bg-white hover:text-slate-950 text-white font-bold px-6 py-2 rounded-full transition-all duration-300 shadow-lg border-none text-xs uppercase tracking-widest"
+            >
+              Book Now
+            </Button>
+          </Link>
+
+          {/* Styled Alert Dialog for New Coach */}
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <button className="text-xs font-bold text-white/90 hover:text-white underline underline-offset-4 decoration-white/40 transition-colors uppercase tracking-widest">
+                New Coach Alert
+              </button>
+            </AlertDialogTrigger>
+            <AlertDialogContent className="max-w-3xl bg-slate-950 border-white/10 rounded-[2rem] p-0 overflow-hidden shadow-2xl">
+              <div className="relative h-64 w-full">
+                <Image
+                  className="object-cover object-top"
+                  alt="Tony Allen Coach"
+                  src="/images/tonyallen2.webp"
+                  fill
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent" />
+                <div className="absolute bottom-6 left-8">
+                  <div className="flex items-center gap-2 mb-2 text-orange-500 font-black uppercase tracking-widest text-xs">
+                    <Sparkles size={14} /> New Coach Alert
+                  </div>
+                  <AlertDialogTitle className="text-3xl font-black text-white tracking-tight">
+                    Welcome Tony Allen
+                  </AlertDialogTitle>
+                </div>
+              </div>
+
+              <div className="p-8 space-y-4">
+                <AlertDialogDescription className="text-slate-300 text-lg leading-relaxed">
+                  We're excited to officially welcome{" "}
+                  <span className="text-white font-bold">Coach Tony Allen</span>{" "}
+                  to the BMO Elite Performance family!
+                </AlertDialogDescription>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-400 text-sm">
+                  <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
+                    <p className="text-orange-500 font-bold mb-1 uppercase text-[10px] tracking-widest">
+                      Specialties
+                    </p>
+                    <p className="text-white font-medium">
+                      Pitching, Hitting, Speed & Agility
+                    </p>
+                  </div>
+                  <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
+                    <p className="text-orange-500 font-bold mb-1 uppercase text-[10px] tracking-widest">
+                      Contact Directly
+                    </p>
+                    <p className="text-white font-medium underline underline-offset-4">
+                      304-240-8427
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                  <Button
+                    asChild
+                    className="bg-orange-500 hover:bg-orange-600 text-white font-bold flex-1 py-6 rounded-xl"
+                  >
+                    <Link href="https://aandtathletictraining.setmore.com/book">
+                      Book Online Now
+                    </Link>
+                  </Button>
+                  <AlertDialogAction className="bg-white/10 text-white border-white/10 hover:bg-white/20 flex-1 py-6 rounded-xl border transition-colors">
+                    Close
+                  </AlertDialogAction>
+                </div>
+              </div>
+            </AlertDialogContent>
+          </AlertDialog>
+        </div>
+      </div>
     </section>
   );
 };
