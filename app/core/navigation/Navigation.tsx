@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef} from "react";
+import { useState, useRef } from "react";
 // Restoring original external icon imports
 import { HiMiniBars3, HiMiniXMark } from "react-icons/hi2";
 import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
@@ -9,7 +9,7 @@ import { AiFillTikTok } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
 import CustomBanner from "@/app/components/custom-banner/CustomBanner";
-
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Navigation() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -66,9 +66,9 @@ export default function Navigation() {
     if (servicesDropdownOpen) setServicesDropdownOpen(false);
   };
 
-
   // Styles utility for the social icons (using original bmo-primary concept)
-  const socialIconClass = "text-white hover:text-bmo-primary transition-colors cursor-pointer";
+  const socialIconClass =
+    "text-white hover:text-bmo-primary transition-colors cursor-pointer";
 
   return (
     <>
@@ -115,7 +115,11 @@ export default function Navigation() {
                   <button
                     type="button"
                     className="text-white hover:text-bmo-primary transition-colors p-2"
-                    aria-expanded={link.name === "Services" ? servicesDropdownOpen : formsDropdownOpen}
+                    aria-expanded={
+                      link.name === "Services"
+                        ? servicesDropdownOpen
+                        : formsDropdownOpen
+                    }
                   >
                     {link.name}
                   </button>
@@ -123,9 +127,7 @@ export default function Navigation() {
                   {(link.name === "Services"
                     ? servicesDropdownOpen
                     : formsDropdownOpen) && (
-                    <div
-                      className="absolute left-24 transform -translate-x-1/2 mt-0 w-56 bg-orange-500 text-white rounded-lg shadow-xl z-50 overflow-hidden"
-                    >
+                    <div className="absolute left-24 transform -translate-x-1/2 mt-0 w-56 bg-orange-500 text-white rounded-lg shadow-xl z-50 overflow-hidden">
                       {link.subLinks.map((subLink) => (
                         <Link
                           key={subLink.name}
@@ -153,17 +155,35 @@ export default function Navigation() {
           </div>
           {/* Desktop Social Icons (Restored imported icons) */}
           <div className="gap-4 hidden md:flex items-center">
-            <Link href="https://www.facebook.com/BMOElitePerformance">
-              <FaFacebookSquare className="text-white hover:text-bmo-primary" size={20} />
+            <Link href="https://www.facebook.com/profile.php?id=61578664407686">
+              <FaFacebookSquare
+                className="text-white hover:text-bmo-primary"
+                size={20}
+              />
+            </Link>
+            <Link href="https://x.com/BmoElite">
+              <FaXTwitter
+                className="text-white hover:text-bmo-primary"
+                size={21}
+              />
+            </Link>
+            <Link href="https://www.instagram.com/bmoeliteperformance/">
+              <FaInstagram
+                className="text-white hover:text-bmo-primary"
+                size={21}
+              />
+            </Link>
+            <Link href="https://www.youtube.com/@BMOElitePerformance">
+              <FaYoutube
+                className="text-white hover:text-bmo-primary"
+                size={21}
+              />
             </Link>
             <Link href="https://www.tiktok.com/@bmo.elite.perform">
-              <AiFillTikTok className="text-white hover:text-bmo-primary" size={21} />
-            </Link>
-            <Link href="https://www.instagram.com/BMOElite21">
-              <FaInstagram className="text-white hover:text-bmo-primary" size={21} />
-            </Link>
-            <Link href="https://www.youtube.com/@BMOElite2321">
-              <FaYoutube className="text-white hover:text-bmo-primary" size={21} />
+              <AiFillTikTok
+                className="text-white hover:text-bmo-primary"
+                size={21}
+              />
             </Link>
           </div>
 
@@ -183,7 +203,7 @@ export default function Navigation() {
               <HiMiniXMark className="text-white" size={30} />
             )}
           </button>
-          
+
           {/* ------------------------------------------
             MOBILE MENU OVERLAY (Click Logic)
             ------------------------------------------
@@ -200,7 +220,10 @@ export default function Navigation() {
                 />
                 {menuLinks.map((link) =>
                   link.subLinks ? (
-                    <div key={link.name} className="relative w-full text-center">
+                    <div
+                      key={link.name}
+                      className="relative w-full text-center"
+                    >
                       <button
                         // Click logic for mobile dropdowns
                         onClick={
@@ -209,7 +232,11 @@ export default function Navigation() {
                             : toggleFormsDropdown
                         }
                         className="text-white hover:text-orange-500 transition-colors text-2xl font-semibold"
-                        aria-expanded={link.name === "Services" ? servicesDropdownOpen : formsDropdownOpen}
+                        aria-expanded={
+                          link.name === "Services"
+                            ? servicesDropdownOpen
+                            : formsDropdownOpen
+                        }
                       >
                         {link.name}
                       </button>
@@ -253,20 +280,20 @@ export default function Navigation() {
                   ),
                 )}
               </nav>
-               {/* Mobile Social Icons (Restored imported icons) */}
-               <div className="gap-6 flex items-center mt-12">
-                  <Link href="https://www.facebook.com/BMOElitePerformance">
-                    <FaFacebookSquare className={socialIconClass} size={30} />
-                  </Link>
-                  <Link href="https://www.tiktok.com/@bmo.elite.perform">
-                    <AiFillTikTok className={socialIconClass} size={32} />
-                  </Link>
-                  <Link href="https://www.instagram.com/BMOElite21">
-                    <FaInstagram className={socialIconClass} size={32} />
-                  </Link>
-                  <Link href="https://www.youtube.com/@BMOElite2321">
-                    <FaYoutube className={socialIconClass} size={32} />
-                  </Link>
+              {/* Mobile Social Icons (Restored imported icons) */}
+              <div className="gap-6 flex items-center mt-12">
+                <Link href="https://www.facebook.com/BMOElitePerformance">
+                  <FaFacebookSquare className={socialIconClass} size={30} />
+                </Link>
+                <Link href="https://www.tiktok.com/@bmo.elite.perform">
+                  <AiFillTikTok className={socialIconClass} size={32} />
+                </Link>
+                <Link href="https://www.instagram.com/BMOElite21">
+                  <FaInstagram className={socialIconClass} size={32} />
+                </Link>
+                <Link href="https://www.youtube.com/@BMOElite2321">
+                  <FaYoutube className={socialIconClass} size={32} />
+                </Link>
               </div>
             </div>
           )}

@@ -65,7 +65,7 @@ export const SocialMedia = () => {
               <FaInstagram size={18} />
             </div>
             <div>
-              <p className="font-bold text-slate-900">@bmoelite21</p>
+              <p className="font-bold text-slate-900">@bmoeliteperformance</p>
               <p className="text-xs text-slate-500 font-medium tracking-wide">
                 INSTAGRAM REELS
               </p>
@@ -74,7 +74,7 @@ export const SocialMedia = () => {
 
           <div className="rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-orange-500/10 group-hover:-translate-y-1">
             <InstagramEmbed
-              url="https://www.instagram.com/bmoelite21/reel/DDkuyUSv65j/"
+              url="https://www.instagram.com/bmoeliteperformance/"
               width="100%"
             />
           </div>
@@ -84,7 +84,7 @@ export const SocialMedia = () => {
       {/* Floating CTA Link */}
       <div className="mt-16 text-center">
         <a
-          href="https://www.instagram.com/bmoelite21/"
+          href="https://www.instagram.com/bmoeliteperformance/"
           target="_blank"
           className="inline-flex items-center gap-2 text-slate-900 font-bold hover:text-orange-500 transition-colors"
         >
