@@ -256,6 +256,35 @@ export default function About() {
               </span>
             </p>
           </article>
+
+          {/* Coach Andreson */}
+          <article className="group">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl mb-6 bg-slate-100">
+              <Image
+                src="/images/coach-andreson.webp"
+                alt="Coach Andreson"
+                fill
+                className="object-cover object-top"
+              />
+              <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
+                <h3 className="text-2xl font-bold">Coach Andreson</h3>
+                <p className="text-orange-400">Infield & Baseball Coach</p>
+              </div>
+            </div>
+            <p className="text-slate-600 leading-relaxed">
+              Now in his early 20s, Coach Andreson built a strong baseball
+              foundation during his high school career, where he was a two-year
+              varsity starter wearing jersey #1. He helped lead his team to
+              Conference and Sectional Championships and a Regional Runner-Up
+              finish in 2019, earning Jefferson County Player of the Week (April
+              2019) along the way.
+            </p>
+            <div className="mt-4">
+              <p className="text-sm font-medium text-slate-700">
+                <span className="text-orange-600">What he brings to BMO:</span> Infield expertise, positive player-focused coaching, leadership and relatability, and a focus on fundamentals and development.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 

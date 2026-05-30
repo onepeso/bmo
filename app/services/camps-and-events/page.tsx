@@ -1,9 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar } from "lucide-react"; // Imported the standard calendar icon
+import { Calendar } from "lucide-react";
+import { X } from "lucide-react";
 
 export default function CampAndEvents() {
+  function isCampOver(dateString: string): boolean {
+    const campDate = new Date(dateString);
+    const today = new Date();
+    campDate.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
+    return campDate < today;
+  }
+
   // Real Schedule Data - *WIP this will later come from sanity.
   const upcomingCamps = [
     {
@@ -136,7 +145,131 @@ export default function CampAndEvents() {
       link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_acvux0f8bczweg?dateStart=1778608800",
       category: "Hitting Camps",
     },
+    {
+      id: 14,
+      title: "(11u - 12u) Hitting Camp - Miguel Olivo",
+      date: "Thursday, June 11, 2026",
+      time: "2 PM EDT (1 hr 45 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Hitting Camps",
+    },
+    {
+      id: 15,
+      title: "(8u - 10u) Hitting Camp - Miguel and Chase",
+      date: "Wednesday, June 17, 2026",
+      time: "3 PM EDT (1 hr 30 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Hitting Camps",
+    },
+    {
+      id: 16,
+      title: "(13u - 15u) Hitting Camp - Miguel Olivo",
+      date: "Thursday, June 18, 2026",
+      time: "1 PM EDT (1 hr 30 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Hitting Camps",
+    },
+    {
+      id: 17,
+      title: "(11u - 12u) Catching Camp - Miguel Olivo",
+      date: "Tuesday, June 23, 2026",
+      time: "12:30 PM EDT (1 hr 30 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Catching Camps",
+    },
+    {
+      id: 18,
+      title: "(11u - 14u) Softball On Field Camp",
+      date: "Wednesday, June 24, 2026",
+      time: "10 AM EDT (3 hr)",
+      price: "$60.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Softball",
+    },
+    {
+      id: 19,
+      title: "(13u - 15u) Hitting Camp - Miguel Olivo",
+      date: "Tuesday, June 30, 2026",
+      time: "3 PM EDT (1 hr 45 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Hitting Camps",
+    },
+    {
+      id: 20,
+      title: "(8u - 10u) Hitting Camp - Miguel and Chase",
+      date: "Tuesday, July 14, 2026",
+      time: "10 AM EDT (1 hr 30 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Hitting Camps",
+    },
+    {
+      id: 21,
+      title: "(11u - 12u) Hitting Camp - Miguel Olivo",
+      date: "Tuesday, July 14, 2026",
+      time: "12:30 PM EDT (1 hr 30 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Hitting Camps",
+    },
+    {
+      id: 22,
+      title: "(13u - 15u) Hitting Camp - Miguel Olivo",
+      date: "Wednesday, July 15, 2026",
+      time: "10 AM EDT (2 hr 30 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Hitting Camps",
+    },
+    {
+      id: 23,
+      title: "(11u - 12u) Catching Camp - Miguel Olivo",
+      date: "Thursday, July 16, 2026",
+      time: "10 AM EDT (1 hr 30 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Catching Camps",
+    },
+    {
+      id: 24,
+      title: "(13u - 15u) Catching Camp - Miguel Olivo",
+      date: "Thursday, July 16, 2026",
+      time: "12:30 PM EDT (1 hr 30 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Catching Camps",
+    },
+    {
+      id: 25,
+      title: "(11u - 13u) Fielding Camp - Miguel Olivo",
+      date: "Friday, July 17, 2026",
+      time: "10 AM EDT (2 hr 30 min)",
+      price: "$80.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      category: "Fielding Camps",
+    },
   ];
+
+  const sortedCamps = [...upcomingCamps].sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
 
   return (
     <main className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -188,7 +321,7 @@ export default function CampAndEvents() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {upcomingCamps.map((camp) => (
+            {sortedCamps.map((camp) => (
               <article
                 key={camp.id}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all hover:shadow-xl hover:-translate-y-1"
@@ -206,6 +339,11 @@ export default function CampAndEvents() {
                   <div className="absolute top-4 right-4 bg-white text-orange-600 px-3 py-1 rounded-md font-extrabold shadow-lg text-sm">
                     {camp.price}
                   </div>
+                  {isCampOver(camp.date) && (
+                    <div className="absolute top-4 left-4 bg-slate-900 text-white px-3 py-1 rounded-md font-extrabold shadow-lg text-sm">
+                      Concluded
+                    </div>
+                  )}
                 </div>
 
                 <div className="flex flex-col p-6">

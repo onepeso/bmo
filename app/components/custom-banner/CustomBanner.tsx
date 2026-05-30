@@ -51,9 +51,9 @@ const CustomBanner = () => {
             <AlertDialogContent className="max-w-3xl bg-slate-950 border-white/10 rounded-[2rem] p-0 overflow-hidden shadow-2xl">
               <div className="relative h-64 w-full">
                 <Image
-                  className="object-cover object-top"
-                  alt="Tony Allen Coach"
-                  src="/images/tonyallen2.webp"
+                  className="object-cover object-center"
+                  alt='Coach Andreson'
+                  src="/images/coach-andreson.webp"
                   fill
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent" />
@@ -62,7 +62,7 @@ const CustomBanner = () => {
                     <Sparkles size={14} /> New Coach Alert
                   </div>
                   <AlertDialogTitle className="text-3xl font-black text-white tracking-tight">
-                    Welcome Tony Allen
+                    Welcome Coach Andreson
                   </AlertDialogTitle>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const CustomBanner = () => {
               <div className="p-8 space-y-4">
                 <AlertDialogDescription className="text-slate-300 text-lg leading-relaxed">
                   We're excited to officially welcome{" "}
-                  <span className="text-white font-bold">Coach Tony Allen</span>{" "}
+                  <span className="text-white font-bold">Coach Andreson</span>{" "}
                   to the BMO Elite Performance family!
                 </AlertDialogDescription>
 
@@ -80,15 +80,15 @@ const CustomBanner = () => {
                       Specialties
                     </p>
                     <p className="text-white font-medium">
-                      Pitching, Hitting, Speed & Agility
+                      Infield, Fundamentals, Development
                     </p>
                   </div>
                   <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
                     <p className="text-orange-500 font-bold mb-1 uppercase text-[10px] tracking-widest">
-                      Contact Directly
+                      Experience
                     </p>
-                    <p className="text-white font-medium underline underline-offset-4">
-                      304-240-8427
+                    <p className="text-white font-medium">
+                      Varsity Starter, Club Baseball
                     </p>
                   </div>
                 </div>

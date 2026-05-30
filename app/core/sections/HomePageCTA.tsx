@@ -143,13 +143,48 @@ export default function Home() {
               variant="link"
               className="text-orange-600 font-bold p-0 group"
             >
-              <Link href="/facility">
+              <Link href="/services/facility-rentals">
                 View our full facility
                 <ChevronRight className="ml-1 transition-transform group-hover:translate-x-1" size={16} />
               </Link>
             </Button>
           </div>
         </div>
+
+        {/* --- SPONSORS SECTION --- */}
+        <section className="py-12 border-y border-slate-100 mt-12">
+          <div className="px-4">
+            <h3 className="text-center text-xs font-bold tracking-widest text-slate-400 uppercase mb-8">
+              Our Sponsors
+            </h3>
+            <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+              <div className="relative h-20 w-44">
+                <Image
+                  src="/images/sponsors/sponsor-modern-renovations.webp"
+                  alt="Modern Renovations"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative h-20 w-44">
+                <Image
+                  src="/images/sponsors/sponsor-pestnow.webp"
+                  alt="Pest Now"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative h-20 w-44">
+                <Image
+                  src="/images/sponsors/sponsor-mountaineer.webp"
+                  alt="Mountaineer"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
         <div className="mt-16 relative rounded-2xl overflow-hidden group">
           <Image
@@ -161,13 +196,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent" />
           
-          <div className="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-              <ChevronRight size={24} className="text-white" />
-            </div>
-          </div>
-
-          <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-10 md:right-10 flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-6 text-white">
+<div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-10 md:right-10 flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-6 text-white z-10">
             <div className="max-w-xl">
               <span className="inline-block px-2 py-1 mb-2 text-xs font-bold tracking-widest text-orange-400 uppercase bg-orange-500/20 rounded-full">
                 Join Our Community
@@ -180,11 +209,11 @@ export default function Home() {
               </p>
             </div>
             <Link
-              href="/membership"
-              className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/40 transition-all hover:scale-105"
+              href="/services/camps-and-events"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/40 transition-all hover:scale-105 z-20"
             >
               Get Started
-              <ChevronRight size={18} className="transition-transform group-hover:translate-x-1" />
+              <ChevronRight size={18} />
             </Link>
           </div>
         </div>
