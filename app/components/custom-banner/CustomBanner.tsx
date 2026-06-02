@@ -98,7 +98,7 @@ const CustomBanner = () => {
                     asChild
                     className="bg-orange-500 hover:bg-orange-600 text-white font-bold flex-1 py-6 rounded-xl"
                   >
-                    <Link href="https://aandtathletictraining.setmore.com/book">
+                    <Link href="https://book.squareup.com/appointments/q48wvj137cflkc/location/L21F7515YPQAE/services?buttonTextColor=ffffff&color=000000&locale=en&referrer=so&team_member_id=TMRiMYpU5WVf9A8W">
                       Book Online Now
                     </Link>
                   </Button>

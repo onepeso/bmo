@@ -152,7 +152,7 @@ export default function CampAndEvents() {
       time: "2 PM EDT (1 hr 45 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_936ixbk8e8lmiy?dateStart=1781200800",
       category: "Hitting Camps",
     },
     {
@@ -162,7 +162,7 @@ export default function CampAndEvents() {
       time: "3 PM EDT (1 hr 30 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_oie1on6v3x5q5f?dateStart=1781722800",
       category: "Hitting Camps",
     },
     {
@@ -172,7 +172,7 @@ export default function CampAndEvents() {
       time: "1 PM EDT (1 hr 30 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_6d3hytvfcwz1uk?dateStart=1781802000",
       category: "Hitting Camps",
     },
     {
@@ -182,17 +182,17 @@ export default function CampAndEvents() {
       time: "12:30 PM EDT (1 hr 30 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_yjybpeokrmxbet?dateStart=1782232200",
       category: "Catching Camps",
     },
     {
       id: 18,
-      title: "(11u - 14u) Softball On Field Camp",
+      title: "(8u - 14u) Softball On Field Camp",
       date: "Wednesday, June 24, 2026",
       time: "10 AM EDT (3 hr)",
       price: "$60.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_at1muanlin1xzh?dateStart=1782309600",
       category: "Softball",
     },
     {
@@ -202,7 +202,7 @@ export default function CampAndEvents() {
       time: "3 PM EDT (1 hr 45 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_im9kjb3cc3pzhw?dateStart=1782846000",
       category: "Hitting Camps",
     },
     {
@@ -212,7 +212,7 @@ export default function CampAndEvents() {
       time: "10 AM EDT (1 hr 30 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_ftfg6myytnht8k?dateStart=1784037600",
       category: "Hitting Camps",
     },
     {
@@ -222,7 +222,7 @@ export default function CampAndEvents() {
       time: "12:30 PM EDT (1 hr 30 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_pu6yy9y0drkz4u?dateStart=1784046600",
       category: "Hitting Camps",
     },
     {
@@ -232,7 +232,7 @@ export default function CampAndEvents() {
       time: "10 AM EDT (2 hr 30 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_6ylsg9w1bf7p0x?dateStart=1784124000",
       category: "Hitting Camps",
     },
     {
@@ -242,7 +242,7 @@ export default function CampAndEvents() {
       time: "10 AM EDT (1 hr 30 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_22rgojfxj1dbz4?dateStart=1784210400",
       category: "Catching Camps",
     },
     {
@@ -252,7 +252,7 @@ export default function CampAndEvents() {
       time: "12:30 PM EDT (1 hr 30 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_f8h0yq1cgtjy7g?dateStart=1784219400",
       category: "Catching Camps",
     },
     {
@@ -262,8 +262,30 @@ export default function CampAndEvents() {
       time: "10 AM EDT (2 hr 30 min)",
       price: "$80.00",
       image: "/images/kid-baseball.webp",
-      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classes",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_zsl2fatbk8bckf?dateStart=1784296800",
       category: "Fielding Camps",
+    },
+    {
+      id: 26,
+      title:
+        "(8u - 14u) Softball Pitching Camp - Beginner with Tony Allen and Brooke Allen",
+      date: "Sunday, June 21, 2026",
+      time: "8 AM EDT (2 hr)",
+      price: "$100.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_m5mhjjyjh45hp9?dateStart=1782043200",
+      category: "Softball Pitching",
+    },
+    {
+      id: 27,
+      title:
+        "(8u - 14u) Softball Pitching Camp - Advanced with Tony Allen and Brooke Allen",
+      date: "Sunday, June 21, 2026",
+      time: "10:30 AM EDT (2 hr)",
+      price: "$100.00",
+      image: "/images/kid-baseball.webp",
+      link: "https://book.squareup.com/classes/q48wvj137cflkc/location/L21F7515YPQAE/classDetails/clssch_lsjtabq9cby24a?dateStart=1782052200",
+      category: "Softball Pitching",
     },
   ];
 
@@ -360,11 +382,17 @@ export default function CampAndEvents() {
                     {camp.title}
                   </h3>
 
-                  <Link href={camp.link} target="_blank" className="mt-auto">
-                    <Button className="w-full bg-slate-900 hover:bg-orange-500 text-white transition-all py-6 font-bold">
-                      Secure My Spot
+                  {isCampOver(camp.date) ? (
+                    <Button className="w-full bg-slate-300 text-slate-500 cursor-not-allowed py-6 font-bold" disabled>
+                      Concluded
                     </Button>
-                  </Link>
+                  ) : (
+                    <Link href={camp.link} target="_blank" className="mt-auto">
+                      <Button className="w-full bg-slate-900 hover:bg-orange-500 text-white transition-all py-6 font-bold">
+                        Secure My Spot
+                      </Button>
+                    </Link>
+                  )}
                 </div>
               </article>
             ))}
