@@ -6,7 +6,7 @@ import { ChevronRight, Target, Zap, Shield, Trophy, Users } from "lucide-react";
 export default function Home() {
   return (
     <div className="bg-slate-50">
-      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
+      <section className="relative z-0 min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1471295253337-3ceaaedca402?q=80&w=2068&auto=format&fit=crop"
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-screen-xl px-4 py-16 lg:px-8">
+      <section className="relative z-0 mx-auto max-w-screen-xl px-4 py-16 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           <div className="lg:col-span-5 relative">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="mt-16 relative rounded-2xl overflow-hidden group">
+        <div className="mt-16 relative z-0 rounded-2xl overflow-hidden group">
           <Image
             alt="BMO Stance"
             src="/images/bmo-stance.webp"

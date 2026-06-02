@@ -5,7 +5,7 @@ import { SocialMedia } from "./core/sections/SocialMedia";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="relative z-0">
       <HomePageCTA />
       <Services />
       <ChooseUs />
